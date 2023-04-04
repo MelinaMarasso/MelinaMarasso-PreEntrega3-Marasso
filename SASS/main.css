@@ -68,6 +68,10 @@
   --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
+.nav .nav__container .nav__label img {
+  width: 30px;
+}
+
 /* BANNER */
 .banner img {
   width: 100%;

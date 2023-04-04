@@ -8,6 +8,7 @@
 }
 /* ------------------------- */
 
+
 /* ENCABEZADO */
 /* Nav. responsive */
 
@@ -30,7 +31,7 @@
     }
     &__label, &__input {
         display: none;
-    }    
+    }  
     &__input:checked + &__menu {
         clip-path: circle(100% at center);
     }
@@ -62,6 +63,11 @@
     }
 }
 
+.nav .nav__container .nav__label img {
+    width: 30px;
+}
+
+
 /* BANNER */
 
 .banner img {
@@ -89,6 +95,7 @@
     height: auto;
     margin-top: 140px;
 }
+
 
 /* INFO HOME */
 
@@ -167,6 +174,7 @@
         }
     }
 }
+
 
 /* INFO PÁGINA FACIAL */
 
@@ -338,6 +346,7 @@
         }
     }
 }
+
 
 /* INFO PÁGINA MASAJE */
 
