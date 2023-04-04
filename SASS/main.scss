@@ -498,13 +498,13 @@
     align-items: center;
     margin: 25px;
     gap: 50px;
+    transition: all 1s;
     .icons__face {
         width: 40px;
         height: 40px;
         .icons__face svg {
             width: 40px;
             height: 40px;
-            transition: all .5s;
         }
     }
     .icons__insta {
@@ -513,7 +513,6 @@
         .icons__insta svg {
             width: 40px;
             height: 40px;
-            transition: all .5s;
         }
     }
 }

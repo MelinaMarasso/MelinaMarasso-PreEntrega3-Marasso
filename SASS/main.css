@@ -501,6 +501,7 @@
   align-items: center;
   margin: 25px;
   gap: 50px;
+  transition: all 1s;
 }
 .icons .icons__face {
   width: 40px;
@@ -509,7 +510,6 @@
 .icons .icons__face .icons__face svg {
   width: 40px;
   height: 40px;
-  transition: all 0.5s;
 }
 .icons .icons__insta {
   width: 40px;
@@ -518,7 +518,6 @@
 .icons .icons__insta .icons__insta svg {
   width: 40px;
   height: 40px;
-  transition: all 0.5s;
 }
 
 .icons .icons__face svg:hover {

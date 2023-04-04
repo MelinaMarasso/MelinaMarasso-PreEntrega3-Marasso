@@ -37,9 +37,6 @@
         font-size: 120%;
     }
 
-    /* .section .card {
-        height: auto;
-    } */
 
     /* PAG FACIAL */
 
@@ -59,7 +56,7 @@
         font-size: 10px;
         line-height: 15px;
         width: auto;
-        padding: 10px;
+        padding: 15px;
         text-align: center;
     }
 
@@ -71,6 +68,11 @@
         justify-content: center;
         width: 80%;
     }
+
+    .facial__1 .facial__image1 img {
+        width: 60%;
+    }
+
 
     .facial__2 {
         display: flex;
@@ -85,12 +87,13 @@
         font-size: 10px;
         line-height: 15px;
         width: auto;
-        padding: 10px;
+        padding: 10px 15px;
         text-align: center;
     }
 
     .facial__2 .facial__txt2 ul li {
-        list-style: none;
+        /* list-style: none; */
+        list-style: inside;
     }
 
     .facial__2 .facial__image2 {
@@ -112,7 +115,7 @@
         font-size: 10px;
         line-height: 15px;
         width: auto;
-        padding: 10px;
+        padding: 10px 15px;
         text-align: center;
     }
 
@@ -125,12 +128,17 @@
     }
 
     .peeling .peeling__txt ul li {
-        list-style: none;
+        /* list-style: none; */
+        list-style: inside;
     }
 
     .peeling .peeling__image {
         justify-content: center;
         width: 80%;
+    }
+
+    .peeling .peeling__image img {
+        width: 60%;
     }
 
     /* PAG DEPILACIÓN */
@@ -140,7 +148,7 @@
     }
 
     .depi__subtitle {
-        font-size: 80%;
+        font-size: 75%;
         margin: 20px 0;
     }
 
@@ -159,6 +167,7 @@
     .depi__1 .depi__txt1 {
         font-size: 10px;
         line-height: 20px;
+        padding: 0 10px;
     }
 
     .depi__1 .depi__txt1 h3 {
@@ -166,7 +175,8 @@
     }
 
     .depi__1 .depi__txt1 ul li {
-        list-style: none;
+        /* list-style: none; */
+        list-style: inside;
     }
 
     .depi__subtitle2 {
@@ -185,6 +195,7 @@
     .depi__2 .depi__txt2 {
         font-size: 10px;
         line-height: 20px;
+        padding: 0 8px;
     }
 
     .depi__2 .depi__txt2 ul {
@@ -192,7 +203,8 @@
     }
 
     .depi__2 .depi__txt2 ul li {
-        list-style: none;
+        /* list-style: none; */
+        list-style: inside;
     }
 
     /* PAG MASAJES */
@@ -219,7 +231,8 @@
     }
 
     .masj__1 .masj__txt1 ul li {
-        list-style: none;
+        /* list-style: none; */
+        list-style: inside;
     }
 
     .masj__1 .masj__image1 {
@@ -268,7 +281,8 @@
     }
 
     .masj__txt2-2 ul li {
-        list-style: none;
+        /* list-style: none; */
+        list-style: inside;
     }
 
     .masj__3 {
