@@ -1,0 +1,562 @@
+/* ----------reset---------- */
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ------------------------- */
+
+/* ENCABEZADO */
+/* Nav. responsive */
+
+.nav {
+    height: 140px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 100;
+    &__logo {
+        height: 140px;
+    }
+    &__container {
+        display: flex;
+        height: 140px;
+        width: 90%;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__label, &__input {
+        display: none;
+    }    
+    &__input:checked + &__menu {
+        clip-path: circle(100% at center);
+    }
+    &__menu {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 3em;
+        font-family: 'Poppins', sans-serif;
+        transition: clip-path 0.5s ease-in-out; 
+    }
+    &__menu &__item {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    }
+    &__item::after {
+        content: "";
+        display: block;
+        background: black;
+        width: 90%;
+        margin-top: 3px;
+        height: 3px;
+        clip-path: var(--clippy);
+        transition: clip-path .5s;
+    }
+    &__item:hover {
+        --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+/* BANNER */
+
+.banner img {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+}
+.banner1 img {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+}
+.banner2 img {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+}
+.banner3 img {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+}
+.banner4 img {
+    width: 100%;
+    height: auto;
+    margin-top: 140px;
+}
+
+/* INFO HOME */
+
+.title h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 230%;
+    margin: 8%;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 20px 100px 20px;
+    font-family: "Poppins", sans-serif;
+    .card {
+        margin: 20px;
+        width: 300px;
+        height: fit-content;
+        box-shadow: 20px 0px 20px 0px rgba(0,0,0,.08);
+        transition: .5s;
+        border-radius: 20px;
+        .card__enlace {
+            text-decoration: none;
+            color: black;
+            .card__image {
+                height: 60%;
+                overflow: hidden;
+                img {
+                    padding: 0;
+                    width: 100%;
+                    height: 400px;
+                    overflow: hidden;
+                    justify-content: center;
+                    box-sizing: content-box;
+                    border-top-right-radius: 20px;
+                    border-top-left-radius: 20px;
+                    transition: .5s;
+                }        
+            }
+            h2 {
+            text-align: center;
+            padding: 5%;
+            font-size: 20px;
+            }
+        }
+        p {
+            text-align: center;
+            padding: 5%;
+            height: 120px;
+            margin-bottom: auto;
+            font-size: 15px;
+        }
+        .bottom {
+            background-color: burlywood;
+            text-align: center;
+            padding: 3%;
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 20px;
+            }        
+        }
+    }
+}
+
+.section {
+    .card:hover {
+        background-color:#e9b8dd;
+        border-radius: 40px;
+        .card__image img {
+            border-top-right-radius: 40px;
+            border-top-left-radius: 40px;
+        }
+    }
+}
+
+/* INFO PÁGINA FACIAL */
+
+.facial__title {
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    font-size: 190%;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* -- */
+.facial__1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    margin: 15px;
+    align-items: center;
+    gap: 50px;
+    margin-right: 100px;
+    .facial__txt1 {
+        padding: 2%;
+        height: auto;
+        width: 50%;
+        font-size: 15px;
+        text-align: start;
+        font-family: 'Poppins', sans-serif; 
+        line-height: 30px;   
+    }
+    .facial__image1 {
+        display: flex;
+        justify-content: end;
+        width: 50%;
+        img {
+            width: 50%;
+        }
+    }
+}
+
+/* -- */
+.facial__2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    margin: 70px 60px 0px 0;
+    align-items: center;
+    gap: 50px;
+    .facial__txt2 {
+        padding: 2%;
+        height: auto;
+        width: 50%;
+        font-size: 15px;
+        text-align: start;
+        font-family: 'Poppins', sans-serif; 
+        line-height: 30px;   
+    }
+    .facial__image2 {
+        display: flex;
+        justify-content: end;
+        width: 50%;
+        img {
+            width: 50%;
+        }
+    }
+}
+
+/* -- */
+.peeling {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    margin: 70px 50px 0 0;
+    gap: 50px;
+    align-items: center;
+    .peeling__txt {
+        padding: 2%;
+        height: auto;
+        width: 50%;
+        font-size: 15px;
+        text-align: start;
+        font-family: 'Poppins', sans-serif; 
+        line-height: 30px;  
+    }
+    .peeling__image {
+        display: flex;
+        justify-content: end;
+        width: 50%;
+        img {
+            width: 50%;
+        }
+    }
+}
+
+
+/* INFO PÁGINA DEPI */
+
+.depi__title {
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    font-size: 190%;
+    font-family: 'Poppins', sans-serif;
+}
+.depi__subtitle {
+    margin: 2%;
+    text-align: center;
+    font-size: 140%;
+    font-family: 'Poppins', sans-serif;
+}
+.depi__image1 {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+    img {
+        width: 25%;
+    }
+}
+
+.depi__1 {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    .depi__txt1 {
+        width: 1000px;
+        text-align: center;
+        font-size: 17px;
+        font-family: 'Poppins', sans-serif;
+        line-height: 30px;
+        h3 {
+            margin: 30px;
+        }
+        ul {
+            list-style: inside;
+        }
+    }
+}
+
+.depi__subtitle2 {
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    font-size: 190%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.depi__image2 {
+    display: flex;
+    justify-content: center;
+    img {
+        width: 25%;
+    }
+}
+
+.depi__2 {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    .depi__txt2 {
+        width: 1000px;
+        text-align: center;
+        font-size: 17px;
+        font-family: 'Poppins', sans-serif;
+        line-height: 30px;
+        ul {
+            margin: 55px 0;
+            list-style: inside;
+        }
+    }
+}
+
+/* INFO PÁGINA MASAJE */
+
+.masj__title {
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    font-size: 190%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.masj__1 {
+    display: flex;
+    justify-content: start;
+    margin: 0 5% ;
+    align-items: center;
+    .masj__image1 {
+        display: flex;
+        justify-content: center;
+        img {
+            width: 60%;
+        }
+    }
+    .masj__txt1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 17px;
+        width: 900px;
+        line-height: 26px;
+        h3 {
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+    }
+}
+
+/* -- */
+.masj__2 {
+    display: flex;
+    justify-content: start;
+    margin: 150px 0 60px 0;
+    align-items: center;
+    .masj__image2 {
+        display: flex;
+        justify-content: center;
+        img {
+            width: 60%;
+        }
+    }
+    .masj__txt2 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 17px;
+        width: 900px;
+        line-height: 25px;
+        margin-right: 100px;
+        h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        h4 {
+            margin: 10px 0;
+        }
+    }
+}
+
+.masj__txt2-2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    line-height: 35px;
+    h4 {
+        margin: 10px 0;
+    }
+}
+
+/* -- */
+.masj__3 {
+    display: flex;
+    justify-content: center;
+    margin: 170px 0;
+    align-items: center;
+    .masj__image3 {
+        display: flex;
+        justify-content: center;
+        margin-left: 25px;
+        img {
+            width: 90%;
+        }
+    }
+    .masj__txt3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 17px;
+        width: 900px;
+        line-height: 30px;
+        margin-right: 25px;
+        h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        h4 {
+            margin: 10px 0;
+        }
+    }
+}
+
+
+/* INFO PÁGINA CONTACTO */
+
+.title1 h2 {
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 190%;
+}
+
+.maps {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+}
+
+.title2 {
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 150%;
+}
+
+.txt1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    width: auto;
+    padding: 0 300px;
+    text-align: center;
+}
+
+.txt2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 5% 0;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.txt2__item {
+    margin-right: 20px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+    gap: 50px;
+    .icons__face {
+        width: 40px;
+        height: 40px;
+        .icons__face svg {
+            width: 40px;
+            height: 40px;
+            transition: all .5s;
+        }
+    }
+    .icons__insta {
+        width: 40px;
+        height: 40px;
+        .icons__insta svg {
+            width: 40px;
+            height: 40px;
+            transition: all .5s;
+        }
+    }
+}
+
+.icons .icons__face svg:hover {
+    width: 55px;
+    height: 55px;
+    fill: #4da3e9;
+}
+
+.icons .icons__insta svg:hover {
+    width: 55px;
+    height: 55px;
+    fill: #c32d8e;
+}
+
+
+/* PIE DE PÁGINA */
+
+.foot {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: linen;
+    margin-top: 200px;
+    .foot__about {
+        font-family: 'Poppins', sans-serif;
+        width: 280px;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        font-size: 12px;
+        h3 {
+            padding-bottom: 10px;
+            text-decoration: underline;
+            font-size: 18px;
+        }
+        p {
+            padding: 2px;
+            font-size: 13px;
+        }
+        .foot__txt {
+            line-height: 30px;
+        }
+    }
+}

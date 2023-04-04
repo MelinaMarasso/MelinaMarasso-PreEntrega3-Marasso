@@ -1,0 +1,365 @@
+/* NAV. */
+@media (max-width: 1200px) {
+    .nav .nav__label {
+        display: block;
+        cursor: pointer;
+    }
+    .nav .nav__menu {
+        position: fixed;
+        top: 100px;
+        bottom: 0;
+        width: 100%;
+        height: fit-content;
+        left: 0;
+        background-color: white;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .nav {
+        height: 100px;
+    }
+
+    .nav .nav__container {
+        height: 100px;
+    }
+
+    .nav .nav__container .nav__logo {
+        height: 100px;
+    }
+
+    .title h1 {
+        font-size: 120%;
+    }
+
+    /* .section .card {
+        height: auto;
+    } */
+
+    /* PAG FACIAL */
+
+    .facial__title {
+        font-size: 75%;
+    }
+
+    .facial__1 {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-right: 10px;
+        margin-left: 10px;
+        gap: 10px;
+    }
+
+    .facial__1 .facial__txt1 {
+        font-size: 10px;
+        line-height: 15px;
+        width: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .txt1__hidden {
+        display: none;
+    }
+    
+    .facial__1 .facial__image1 {
+        justify-content: center;
+        width: 80%;
+    }
+
+    .facial__2 {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-right: 10px;
+        margin-left: 10px;
+        gap: 10px;
+        margin: 0;
+    }
+
+    .facial__2 .facial__txt2 {
+        font-size: 10px;
+        line-height: 15px;
+        width: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .facial__2 .facial__txt2 ul li {
+        list-style: none;
+    }
+
+    .facial__2 .facial__image2 {
+        justify-content: center;
+        width: 80%;
+        display: none;
+    }
+
+    .peeling {
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+        margin-left: 10px;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .peeling .peeling__txt {
+        font-size: 10px;
+        line-height: 15px;
+        width: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .peeling .peeling__txt h2 {
+        margin-bottom: 10px;
+    }
+
+    .peeling .peeling__txt h3 {
+        margin: 10px;
+    }
+
+    .peeling .peeling__txt ul li {
+        list-style: none;
+    }
+
+    .peeling .peeling__image {
+        justify-content: center;
+        width: 80%;
+    }
+
+    /* PAG DEPILACIÓN */
+
+    .depi__title {
+        font-size: 120%;
+    }
+
+    .depi__subtitle {
+        font-size: 80%;
+        margin: 20px 0;
+    }
+
+    .depi__image1 {
+        gap: 20px;
+    }
+
+    .depi__image1 img {
+        width: 40%;
+    }
+
+    .depi__1 {
+        margin: 20px;
+    }
+
+    .depi__1 .depi__txt1 {
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+    .depi__1 .depi__txt1 h3 {
+        font-size: 15px;
+    }
+
+    .depi__1 .depi__txt1 ul li {
+        list-style: none;
+    }
+
+    .depi__subtitle2 {
+        font-size: 80%;
+        margin: 40px 0;
+    }
+
+    .depi__image2 img {
+        width: 50%;
+    }
+
+    .depi__2 {
+        margin: 20px;
+    }
+
+    .depi__2 .depi__txt2 {
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+    .depi__2 .depi__txt2 ul {
+        margin: 35px 0;
+    }
+
+    .depi__2 .depi__txt2 ul li {
+        list-style: none;
+    }
+
+    /* PAG MASAJES */
+
+    .masj__title {
+        font-size: 120%;
+    }
+
+    .masj__1 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: normal;
+    }
+
+    .masj__1 .masj__txt1 {
+        font-size: 10px;
+        line-height: 20px;
+        width: auto;
+        text-align: center;
+    }
+
+    .masj__1 .masj__txt1 h3 {
+        font-size: 120%;
+    }
+
+    .masj__1 .masj__txt1 ul li {
+        list-style: none;
+    }
+
+    .masj__1 .masj__image1 {
+        margin: 30px 0;
+    }
+
+    .masj__1 .masj__image1 img {
+        width: 50%;
+    }
+
+    .masj__2 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: normal;
+        margin: 40px 0;
+    }
+
+    .masj__2 .masj__txt2 {
+        font-size: 10px;
+        line-height: 20px;
+        width: auto;
+        text-align: center;
+        margin: 20px;
+    }
+
+    .masj__2 .masj__txt2 h3 {
+        font-size: 120%;
+    }
+
+    .masj__2 .masj__txt2 h4 {
+        font-size: 100%;
+    }
+
+    .masj__2 .masj__image2 img {
+        width: 50%;
+    }
+
+    .masj__txt2-2 {
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+    .masj__txt2-2 h4 {
+        font-size: 100%;
+        margin: 10px 40px;
+    }
+
+    .masj__txt2-2 ul li {
+        list-style: none;
+    }
+
+    .masj__3 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: normal;
+        margin: 60px 0;
+    }
+
+    .masj__3 .masj__image3 {
+        margin: 20px 0;
+    }
+
+    .masj__3 .masj__image3 img {
+        width: 70%;
+    }
+
+    .masj__3 .masj__txt3 {
+        font-size: 10px;
+        line-height: 20px;
+        margin: 20px;
+        width: auto;
+        text-align: center;
+    }
+
+    .masj__3 .masj__txt3 h3 {
+        font-size: 120%;
+    }
+
+    .masj__3 .masj__txt3 h4 {
+        font-size: 100%;
+    }
+
+    /* PAG CONTACTO */
+
+    .banner4 img {
+        margin-top: 100px;
+    }
+
+    .title1 h2 {
+        font-size: 120%;
+    }
+
+    .maps {
+        margin: 0 30px;
+    }
+
+    .maps iframe {
+        height: 300px;
+    }
+
+    .title2 {
+        font-size: 80%;
+        margin: 50px 20px;
+    }
+
+    .txt1 {
+        margin: 0 20px;
+        font-size: 12px;
+        padding: 0;
+    }
+
+    .txt2 {
+        margin: 20px 10px;
+        text-align: center;
+        font-size: 15px;
+        line-height: 45px;
+    }
+
+    .txt2__item {
+        height: 20px;
+    }
+
+    .txt3__item {
+        width: 30px;
+    }
+
+    /* PIE DE PÁGINA */
+
+    .foot {
+        margin-top: 100px;
+    }
+    .foot .foot__about {
+        width: auto;
+        margin-top: 25px;
+        padding: 0 20px;
+    }
+    .foot .foot__about h3 {
+        font-size: 15px;
+    }
+    .foot .foot__about .foot__txt {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Estetica & Spa</title>
+    <link rel="shortcut icon" href="./img/pandalogo.png" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./SASS/main.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
+    <!-- Fuentes de letras -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+    <!-- ENCABEZADO -->
+    <header class="nav">
+        <!-- LOGO -->
+        <div class="nav__container">
+            <a href="./index.html">
+                <img class="nav__logo" src="./img/centrodeestética&spa.png" alt="LogoCentrodeEstetica&Spa">
+            </a>
+
+            <!-- Encabezado hamburguesa en responsive desde 320 a 1023-->
+            <label for="menu" class="nav__label">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAExJREFUSEtjZKAxYKSx+QyjFhAM4QEJov8EnYVfAYqjsfmA5hZQ6AFU7QMSBzT3Ac3jgOYW0DyIhr4FNI8Dmlsw9ONg1AcoIUDz0hQAbegGGXzv/l0AAAAASUVORK5CYII="/>
+            </label>
+            <input type="checkbox" id="menu" class="nav__input">
+
+            <!-- NAVEGADOR -->
+            <nav class="nav__menu">
+                    <a class="nav__item" href="./index.html">INICIO</a>
+                    <a class="nav__item" href="./HTML/facial.html">FACIAL</a>
+                    <a class="nav__item" href="./HTML/depilacion.html">DEPILACIÓN</a>
+                    <a class="nav__item" href="./HTML/masajes.html">MASAJES</a>
+                    <a class="nav__item" href="./HTML/contacto.html">CONTACTO</a>
+            </nav>
+        </div>   
+    </header>
+
+
+   <!--  BANNER  -->
+    <div class="banner">
+        <img src="./img/carrusel1-1.png" alt="Banner">
+    </div>
+       
+
+    <!-- INFO -->
+    <div class="title">
+        <h1 class="animate__animated animate__fadeInLeftBig">CONOCÉ NUESTROS SERVICIOS</h1>
+    </div>
+    
+    <main class="section">
+        <div class="card">
+            <a class="card__enlace" href="./HTML/facial.html">
+                <div class="card__image">
+                    <img src="./img/inicio1.png" alt="Limpieza de Cutis">
+                </div>
+                <h2>Limpieza de Cutis</h2>
+            </a>
+            <!-- <p>Procedimiento destinado a mejorar el aspecto de la piel; se eliminan las
+            células muertas de la capa más superficial de la epidermis...</p> -->
+            <!-- <div class="bottom">
+                <a href="./HTML/facial.html">Ver más...</a>
+            </div> -->
+        </div>
+            
+        <div class="card">
+            <a class="card__enlace" href="./HTML/depilacion.html">
+                <div  class="card__image">
+                    <img src="./img/inicio2.png" alt="Depilación Definitiva">
+                </div>
+                <h2>Depilación definitiva</h2>
+            </a>
+            <!-- <p>Contamos con aparatología de última generación: Soprano Ice Platinum...</p> -->            
+            <!-- <div class="bottom">
+                <a href="./HTML/depilacion.html">Ver más...</a>
+            </div> -->
+        </div> 
+            
+        <div class="card">
+            <a class="card__enlace" href="./HTML/masajes.html">
+                <div  class="card__image">
+                    <img src="./img/inicio3.png" alt="Masajes">
+                </div>   
+                <h2>Masajes</h2>
+            </a>
+            <!-- <p>Diferentes masajes que te van a devolver la alegría, la tranquilidad y la armonia...</p> -->
+            <!-- <div class="bottom">
+                <a href="./HTML/masajes.html">Ver más...</a>
+            </div> -->
+        </div>
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="foot">
+            <div class="foot__about">
+                <h3>Sobre Nosotros</h3>
+                <p class="foot__txt">Caña de bambú un centro estético diseñado y creado para el bienestar de las personas.
+                Un espacio acorde a sus exigencias. Un equipo de gran calidad profesional y humana.</p>
+            </div>
+                
+            <div class="foot__about">
+                <h3>Horarios de Apertura</h3>
+                <p> Lunes a Viernes: 8 AM - 20 PM</p>
+                <p>Sábados: 8 AM - 12 PM</p> 
+                <p>Domingos: Cerrados</p> 
+            </div>
+                
+            <div class="foot__about">
+                <h3>Encuéntranos en:</h3>
+                <p> Paso de Los Andes 970, Barrio Observatorio, Córdoba.</p>
+                <p>Email: cañadebambu@gmail.com</p>
+                <p>Teléfono: (0351) 442 8219</p>
+                <p>WhatsApp: +54 9 351 5945411</p>
+            </div>
+    </footer>
+</body>
+</html>
