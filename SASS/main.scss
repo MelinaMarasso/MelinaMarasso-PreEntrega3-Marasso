@@ -31,7 +31,7 @@
     }
     &__label, &__input {
         display: none;
-    }  
+    }    
     &__input:checked + &__menu {
         clip-path: circle(100% at center);
     }
@@ -40,7 +40,7 @@
         grid-auto-flow: column;
         gap: 3em;
         font-family: 'Poppins', sans-serif;
-        transition: clip-path 0.5s ease-in-out; 
+        transition: clip-path 1s ease-in-out; 
     }
     &__menu &__item {
         text-decoration: none;

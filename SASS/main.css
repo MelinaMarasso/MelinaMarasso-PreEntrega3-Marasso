@@ -41,9 +41,9 @@
   grid-auto-flow: column;
   gap: 3em;
   font-family: "Poppins", sans-serif;
-  transition: -webkit-clip-path 0.5s ease-in-out;
-  transition: clip-path 0.5s ease-in-out;
-  transition: clip-path 0.5s ease-in-out, -webkit-clip-path 0.5s ease-in-out;
+  transition: -webkit-clip-path 1s ease-in-out;
+  transition: clip-path 1s ease-in-out;
+  transition: clip-path 1s ease-in-out, -webkit-clip-path 1s ease-in-out;
 }
 .nav__menu .nav__item {
   text-decoration: none;
